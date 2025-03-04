@@ -1,12 +1,12 @@
 {
   "name": "client",
-  "hash": "244cf929ebd650b2baa8",
+  "hash": "3d447f7122b6bd0c535d",
   "publicPath": "",
   "outputPath": "C:\\Users\\razvan.neculaes\\Repositories2\\pwa-kit\\retail-react-app\\build",
   "assetsByChunkName": {
     "main": [
       "main.js",
-      "main.3bbd8504dc18bc7f4fcc.hot-update.js"
+      "main.e22604b6711b6ec76883.hot-update.js"
     ],
     "pages-home": [
       "pages-home.js"
@@ -94,7 +94,7 @@
     {
       "type": "asset",
       "name": "main.js",
-      "size": 856372,
+      "size": 851264,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
@@ -1153,33 +1153,6 @@
     },
     {
       "type": "asset",
-      "name": "main.3bbd8504dc18bc7f4fcc.hot-update.js",
-      "size": 14149,
-      "emitted": false,
-      "comparedForEmit": false,
-      "cached": true,
-      "info": {
-        "hotModuleReplacement": true,
-        "immutable": true,
-        "fullhash": "3bbd8504dc18bc7f4fcc",
-        "related": {
-          "sourceMap": "main.3bbd8504dc18bc7f4fcc.hot-update.js.map"
-        }
-      },
-      "chunkNames": [
-        "main"
-      ],
-      "chunkIdHints": [],
-      "auxiliaryChunkNames": [],
-      "auxiliaryChunkIdHints": [],
-      "filteredRelated": 1,
-      "chunks": [
-        "main"
-      ],
-      "auxiliaryChunks": []
-    },
-    {
-      "type": "asset",
       "name": "pages-home.js",
       "size": 12173,
       "emitted": false,
@@ -1355,6 +1328,33 @@
     },
     {
       "type": "asset",
+      "name": "main.e22604b6711b6ec76883.hot-update.js",
+      "size": 3964,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "hotModuleReplacement": true,
+        "immutable": true,
+        "fullhash": "e22604b6711b6ec76883",
+        "related": {
+          "sourceMap": "main.e22604b6711b6ec76883.hot-update.js.map"
+        }
+      },
+      "chunkNames": [
+        "main"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "filteredRelated": 1,
+      "chunks": [
+        "main"
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
       "name": "pages-my-new-route.js",
       "size": 2742,
       "emitted": false,
@@ -1451,7 +1451,7 @@
     },
     {
       "type": "asset",
-      "name": "main.3bbd8504dc18bc7f4fcc.hot-update.json",
+      "name": "main.e22604b6711b6ec76883.hot-update.json",
       "size": 28,
       "emitted": false,
       "comparedForEmit": false,
@@ -1459,7 +1459,7 @@
       "info": {
         "hotModuleReplacement": true,
         "immutable": true,
-        "fullhash": "3bbd8504dc18bc7f4fcc"
+        "fullhash": "e22604b6711b6ec76883"
       },
       "chunkNames": [],
       "chunkIdHints": [],
@@ -1484,7 +1484,7 @@
           "name": "main.js"
         },
         {
-          "name": "main.3bbd8504dc18bc7f4fcc.hot-update.js"
+          "name": "main.e22604b6711b6ec76883.hot-update.js"
         }
       ],
       "filteredAssets": 0,
@@ -2202,7 +2202,7 @@
       "id": "main",
       "files": [
         "main.js",
-        "main.3bbd8504dc18bc7f4fcc.hot-update.js"
+        "main.e22604b6711b6ec76883.hot-update.js"
       ]
     },
     {
