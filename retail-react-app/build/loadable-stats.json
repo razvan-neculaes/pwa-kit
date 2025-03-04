@@ -1,12 +1,11 @@
 {
   "name": "client",
-  "hash": "3d447f7122b6bd0c535d",
+  "hash": "26e5bc7ce1afc1899684",
   "publicPath": "",
   "outputPath": "C:\\Users\\razvan.neculaes\\Repositories2\\pwa-kit\\retail-react-app\\build",
   "assetsByChunkName": {
     "main": [
-      "main.js",
-      "main.e22604b6711b6ec76883.hot-update.js"
+      "main.js"
     ],
     "pages-home": [
       "pages-home.js"
@@ -94,7 +93,7 @@
     {
       "type": "asset",
       "name": "main.js",
-      "size": 851264,
+      "size": 851448,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
@@ -1328,33 +1327,6 @@
     },
     {
       "type": "asset",
-      "name": "main.e22604b6711b6ec76883.hot-update.js",
-      "size": 3964,
-      "emitted": false,
-      "comparedForEmit": false,
-      "cached": true,
-      "info": {
-        "hotModuleReplacement": true,
-        "immutable": true,
-        "fullhash": "e22604b6711b6ec76883",
-        "related": {
-          "sourceMap": "main.e22604b6711b6ec76883.hot-update.js.map"
-        }
-      },
-      "chunkNames": [
-        "main"
-      ],
-      "chunkIdHints": [],
-      "auxiliaryChunkNames": [],
-      "auxiliaryChunkIdHints": [],
-      "filteredRelated": 1,
-      "chunks": [
-        "main"
-      ],
-      "auxiliaryChunks": []
-    },
-    {
-      "type": "asset",
       "name": "pages-my-new-route.js",
       "size": 2742,
       "emitted": false,
@@ -1448,25 +1420,6 @@
         "_e82a"
       ],
       "auxiliaryChunks": []
-    },
-    {
-      "type": "asset",
-      "name": "main.e22604b6711b6ec76883.hot-update.json",
-      "size": 28,
-      "emitted": false,
-      "comparedForEmit": false,
-      "cached": true,
-      "info": {
-        "hotModuleReplacement": true,
-        "immutable": true,
-        "fullhash": "e22604b6711b6ec76883"
-      },
-      "chunkNames": [],
-      "chunkIdHints": [],
-      "auxiliaryChunkNames": [],
-      "auxiliaryChunkIdHints": [],
-      "chunks": [],
-      "auxiliaryChunks": []
     }
   ],
   "namedChunkGroups": {
@@ -1482,14 +1435,11 @@
         },
         {
           "name": "main.js"
-        },
-        {
-          "name": "main.e22604b6711b6ec76883.hot-update.js"
         }
       ],
       "filteredAssets": 0,
       "assetsSize": null,
-      "filteredAuxiliaryAssets": 3,
+      "filteredAuxiliaryAssets": 2,
       "auxiliaryAssetsSize": null,
       "children": {},
       "childAssets": {}
@@ -2201,8 +2151,7 @@
     {
       "id": "main",
       "files": [
-        "main.js",
-        "main.e22604b6711b6ec76883.hot-update.js"
+        "main.js"
       ]
     },
     {

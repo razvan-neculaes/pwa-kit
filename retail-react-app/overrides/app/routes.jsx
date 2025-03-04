@@ -20,6 +20,8 @@ const fallback = <Skeleton height="75vh" width="100%" />
 // Use loadable to split code into smaller js chunks
 const Home = loadable(() => import('./pages/home'), {fallback})
 const MyNewRoute = loadable(() => import('./pages/my-new-route'))
+//const StoreLocator = loadable(() => import('./pages/osfstorelocator'), {fallback})
+//const StoreLocatorDetails = loadable(() => import('./pages/osfstorelocatordetails'), {fallback})
 const StoreLocatorHome = loadable(() => import('./pages/osfstorelocator-home'), {fallback})
 
 const routes = [
