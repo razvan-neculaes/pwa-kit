@@ -40,7 +40,7 @@ import TagManager from 'react-gtm-module'
 
 const DEFAULT_LOCALE = 'en-US'
 
-// import '@formatjs/intl-locale/polyfill';
+import '@formatjs/intl-locale/polyfill';
 
 import oneTrust from '../../utils/oneTrust/oneTrust'
 

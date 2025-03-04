@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: BSD-3-Clause
  * For full license text, see the LICENSE file in the repo root or https://opensource.org/licenses/BSD-3-Clause
  */
-import jwtDecode from 'jwt-decode'
+import { jwtDecode } from 'jwt-decode'
 import {getAppOrigin} from '@salesforce/pwa-kit-react-sdk/utils/url'
 import {HTTPError} from '@salesforce/pwa-kit-react-sdk/ssr/universal/errors'
 import fetch from 'cross-fetch'
