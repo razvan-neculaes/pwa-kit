@@ -16,7 +16,7 @@ const StoreBreadCrumb = ({activePage, storeName, params, cityInfo}) => {
     const intl = useIntl()
     const siteCode = useSiteCode()
     const commonInfo = useCommonInfo()
-    const styles = useStyleConfig(`StoreLocatorBreadcrumb${siteCode.getSiteCodeId()}`)
+    const styles = useStyleConfig(`StoreLocatorBreadcrumb`)
     const history = useHistory()
     const [cityName, setCityName] = useState(null)
 
@@ -69,7 +69,7 @@ const StoreBreadCrumb = ({activePage, storeName, params, cityInfo}) => {
                         state: {inputParameter: val}
                     })
                 }
-                
+
             } else {
                 let placesService = new google.maps.places.PlacesService(document.createElement('div')) //empty element. just to instantiate
                 const request = {

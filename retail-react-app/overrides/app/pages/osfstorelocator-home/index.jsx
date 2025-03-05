@@ -9,6 +9,8 @@ import Seo from '../../components/seo'
 import {useIntl} from 'react-intl'
 
 const StoreLocatorHome = ({appOrigin, seoBrandName}) => {
+    console.log(`__appOrigin: ${appOrigin}`);
+
     const intl = useIntl()
     const siteCode = useSiteCode()
 
@@ -59,6 +61,8 @@ const StoreLocatorHome = ({appOrigin, seoBrandName}) => {
 
 StoreLocatorHome.getProps = async () => {
     const appOrigin = getAppOrigin()
+
+    console.log(`_appOrigin: ${appOrigin}`);
 
     //SEO
     const seoBrandName = appOrigin.includes('icode') ? 'ICODE' : 'IKKS'

@@ -12,6 +12,7 @@ import {ChakraProvider} from '@chakra-ui/react'
 import 'focus-visible/dist/focus-visible'
 import GlobalCss from '../../theme/global-css'
 import theme from '../../theme'
+import { themeIKKS, themeICODE } from '../../theme'
 import CommerceAPI from '../../commerce-api'
 import {
     SitePreferencesProvider,
@@ -42,6 +43,10 @@ const AppConfig = ({children, locals = {}}) => {
     const [commonInfo, setCommonInfo] = useState({city: null, langauge: null})
     const [sitePref, setSitePref] = useState(null)
 
+    console.log(`Initialization ... SiteID: ${locals.site.id} SiteCode: ${siteCode}`)
+
+    const _theme = siteCode === 'IKKS' ? themeIKKS : themeICODE
+
     return (
         <MultiSiteProvider site={locals.site} locale={locals.locale} buildUrl={locals.buildUrl}>
             <CommerceAPIProvider value={locals.api}>
@@ -51,7 +56,7 @@ const AppConfig = ({children, locals = {}}) => {
                             <CommonInfoProvider value={{commonInfo, setCommonInfo}}>
                                 <SiteCodeProvider value={{siteCode, setSiteCode}}>
                                     <CustomerProductListsProvider>
-                                        <ChakraProvider theme={theme}>
+                                        <ChakraProvider theme={_theme}>
                                             <GlobalCss />
                                             {children}
                                         </ChakraProvider>

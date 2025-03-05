@@ -1,6 +1,6 @@
 {
   "name": "client",
-  "hash": "3e3225b8c2e07c6e5295",
+  "hash": "452451c9bfb63d7c61a5",
   "publicPath": "",
   "outputPath": "C:\\Users\\razvan.neculaes\\Repositories2\\pwa-kit\\retail-react-app\\build",
   "assetsByChunkName": {
@@ -93,7 +93,7 @@
     {
       "type": "asset",
       "name": "main.js",
-      "size": 851448,
+      "size": 858413,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
@@ -391,7 +391,7 @@
     {
       "type": "asset",
       "name": "pages-osfstorelocator-home.js",
-      "size": 55702,
+      "size": 55762,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,

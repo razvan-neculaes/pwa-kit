@@ -71,6 +71,11 @@ import StoreLocatorBreadcrumbICODE from './components/sites/store-locator-breadc
 import StoreLocatorMapIKKS from './components/sites/store-locator-map-ikks'
 import StoreLocatorMapICODE from './components/sites/store-locator-map-icode'
 
+// Function to select components based on site/theme
+const selectComponent = (siteId, componentIKKS, componentICODE) => {
+    return siteId === 'IKKS' ? componentIKKS : componentICODE;
+};
+
 // Please refer to the Chakra-Ui theme customization docs found
 // here https://chakra-ui.com/docs/theming/customize-theme to learn
 // more about extending and overriding themes for your project.
@@ -142,4 +147,85 @@ const overrides = {
     }
 }
 
+// Define overrides for each theme
+const createOverrides = (siteId) => ({
+    styles,
+    layerStyles,
+    colors,
+    sizes,
+    space,
+    gradients,
+    shadows,
+    components: {
+        Accordion,
+        Alert,
+        Badge,
+        Button,
+        Checkbox,
+        Container,
+        Drawer,
+        FormLabel,
+        Icon,
+        Input,
+        Modal,
+        Popover,
+        Radio,
+        Select,
+        Skeleton,
+        Tooltip,
+        App,
+        Breadcrumb,
+        Header,
+
+        FooterIKKS,
+        FooterICODE,
+        StoreLocatorResultsIKKS,
+        StoreLocatorResultsICODE,
+        StoreLocatorInformationIKKS,
+        StoreLocatorInformationICODE,
+        StoreLocatorSearchIKKS,
+        StoreLocatorSearchICODE,
+        StoreLocatorTimetableIKKS,
+        StoreLocatorTimetableICODE,
+        StoreLocatorStoresNearIKKS,
+        StoreLocatorStoresNearICODE,
+        StoreLocatorDetailsIKKS,
+        StoreLocatorDetailsICODE,
+        StoreLocatorBreadcrumbIKKS,
+        StoreLocatorBreadcrumbICODE,
+        StoreLocatorMapIKKS,
+        StoreLocatorMapICODE,
+
+        Footer: selectComponent(siteId, FooterIKKS, FooterICODE), // Use dynamic selection
+        StoreLocatorBreadcrumb: selectComponent(
+            siteId,
+            StoreLocatorBreadcrumbIKKS,
+            StoreLocatorBreadcrumbICODE
+        ),
+        CheckoutFooter,
+        LinksList,
+        ListMenu,
+        DrawerMenu,
+        NestedAccordion,
+        LocaleSelector,
+        OfflineBanner,
+        SocialIcons,
+        Pagination,
+        ProductTile,
+        SwatchGroup,
+        ImageGallery,
+        Landing,
+        StoreLocatorResults: selectComponent(
+            siteId,
+            StoreLocatorResultsIKKS,
+            StoreLocatorResultsICODE
+        )
+    }
+});
+
 export default extendTheme(overrides)
+
+// Export each theme
+export const themeIKKS = extendTheme(createOverrides('IKKS'));
+export const themeICODE = extendTheme(createOverrides('ICODE'));
+export const themeONESTEP = extendTheme(createOverrides('ONESTEP_FR'));

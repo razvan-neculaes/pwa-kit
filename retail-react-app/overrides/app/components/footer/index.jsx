@@ -39,7 +39,7 @@ import useSiteCode from '../../commerce-api/hooks/useSiteCode'
 
 const Footer = (props) => {
     const siteCode = useSiteCode()
-    const styles = useMultiStyleConfig(`Footer${siteCode.getSiteCodeId()}`)
+    const styles = useMultiStyleConfig(`Footer`)
     const intl = useIntl()
     const [languageMenuVisibility, setLanguageMenuVisibility] = useState(false)
     const [selectedAccordion, setSelectedAccordion] = useState(0)

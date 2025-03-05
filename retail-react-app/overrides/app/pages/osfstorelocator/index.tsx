@@ -86,9 +86,7 @@ const StoreLocator = ({appOrigin, seoBrandName, seoCityName, params}) => {
     const siteCode = useSiteCode()
     const sitePref = useSitePreferences()
     const styles = useStyleConfig(
-        `StoreLocatorResults${
-            appOrigin ? (appOrigin.includes('icode') ? 'ICODE' : 'IKKS') : 'IKKS'
-        }`
+        `StoreLocatorResults`
     )
     const intl = useIntl()
     const [collections, setCollections] = useState([])
@@ -179,7 +177,7 @@ const StoreLocator = ({appOrigin, seoBrandName, seoCityName, params}) => {
         }
 
         setProximisGroups(proximisGroups)
-        
+
         // Check for search parameters in the url
         const url = new URL(window.location.href)
         const searchParams = new URLSearchParams(url.search)
@@ -215,7 +213,7 @@ const StoreLocator = ({appOrigin, seoBrandName, seoCityName, params}) => {
     * It then loads the Google Map API with the retrieved key and sets the Google API key in the window.
     */
     async function getGoogleApiKey() {
-        let prefList; 
+        let prefList;
         if (sitePref.getSitePreferences()?.c_ikks_googleMapKey) {
             prefList = sitePref.getSitePreferences()
         } else {
@@ -739,12 +737,12 @@ const StoreLocator = ({appOrigin, seoBrandName, seoCityName, params}) => {
                             longitude: lagLongobj.lng,
                             distance: (countryExists) ? 400 : maxDistance
                         })) || []
-                    
+
                         if (isFiltered.isFiltered) {
                             storesNearResults.forEach((element) => {
                                 if (
                                     element['c_typology'] &&
-                                    element['c_typology'] != 'undefined' && 
+                                    element['c_typology'] != 'undefined' &&
                                     element['c_typology'].includes(isFiltered.filterGroupID)
                                 ) {
                                     storesNear.push(element)
@@ -961,7 +959,7 @@ const StoreLocator = ({appOrigin, seoBrandName, seoCityName, params}) => {
         handleStoreSearch("", "", true)
     }
 
-    // Seo  
+    // Seo
     const seoTitle = `
     ${intl.formatMessage(
         {
@@ -978,7 +976,7 @@ const StoreLocator = ({appOrigin, seoBrandName, seoCityName, params}) => {
     )}
     ${seoCityName}
     `
-    
+
     const seoDesc = `
     ${intl.formatMessage(
         {
@@ -1023,12 +1021,12 @@ const StoreLocator = ({appOrigin, seoBrandName, seoCityName, params}) => {
             setLoading(false)
         }, 200)
     }, [])
-    
+
     return (
         <>
      {loading ? (
-                <Center>     
-                    <Skeleton height="75vh" width="100%" />   
+                <Center>
+                    <Skeleton height="75vh" width="100%" />
                 </Center>
       ) : (
         <>
@@ -1064,8 +1062,8 @@ const StoreLocator = ({appOrigin, seoBrandName, seoCityName, params}) => {
                                             {params.city ? decodeURI(params.city).split('-').join(' ') : ''}
                                         </>
                                     )}
-                                    
-                                    
+
+
                                 </Heading>
                             </Flex>
                         )}
@@ -1414,7 +1412,7 @@ const StoreLocator = ({appOrigin, seoBrandName, seoCityName, params}) => {
                                             >
                                             </StoreCard>
                                         )}
-                                        
+
                                     </Flex>
                                 </Flex>
                                 <Flex flex={1} width={'100%'} minHeight="492px">
@@ -1440,7 +1438,7 @@ const StoreLocator = ({appOrigin, seoBrandName, seoCityName, params}) => {
         </>
       )}
         </>
-        
+
     )
 }
 
