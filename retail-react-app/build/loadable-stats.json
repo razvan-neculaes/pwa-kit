@@ -1,6 +1,6 @@
 {
   "name": "client",
-  "hash": "26e5bc7ce1afc1899684",
+  "hash": "3e3225b8c2e07c6e5295",
   "publicPath": "",
   "outputPath": "C:\\Users\\razvan.neculaes\\Repositories2\\pwa-kit\\retail-react-app\\build",
   "assetsByChunkName": {
@@ -1153,7 +1153,7 @@
     {
       "type": "asset",
       "name": "pages-home.js",
-      "size": 12173,
+      "size": 11224,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,

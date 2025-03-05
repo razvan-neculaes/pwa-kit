@@ -21,7 +21,7 @@ import ProductScroller from '@salesforce/retail-react-app/app/components/product
 import {getAssetUrl} from '@salesforce/pwa-kit-react-sdk/ssr/universal/utils'
 
 //Hooks
-import useEinstein from '@salesforce/retail-react-app/app/hooks/use-einstein'
+//import useEinstein from '@salesforce/retail-react-app/app/hooks/use-einstein'
 
 // Constants
 import {
@@ -42,9 +42,9 @@ import {useProductSearch} from '@salesforce/commerce-sdk-react'
  * categories and products, data is from local file.
  */
 const Home = () => {
-    const intl = useIntl()
-    const einstein = useEinstein()
-    const {pathname} = useLocation()
+    //const intl = useIntl()
+    //const einstein = useEinstein()
+    //const {pathname} = useLocation()
 
     // useServerContext is a special hook introduced in v3 PWA Kit SDK.
     // It replaces the legacy `getProps` and provide a react hook interface for SSR.
@@ -69,9 +69,9 @@ const Home = () => {
     })
 
     /**************** Einstein ****************/
-    useEffect(() => {
-        einstein.sendViewPage(pathname)
-    }, [])
+    //useEffect(() => {
+    //    einstein.sendViewPage(pathname)
+    //}, [])
 
     return (
         <Box data-testid="home-page" layerStyle="page">
